@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar-brand{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0px;
+    color: #333333;
+}
+p{
+    color: rgba(0, 0, 0, 0.5);
+}
+ .sec-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(img/hero_bg_1.jpg.webp) ,no-repeat;
+    background-size: cover;
+}
+.sec-1 h1{
+    color: white;
+    font-weight: 500;
+}
+.sec-1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+.sec-1 .btn{
+    padding: 17px 45px;
+    color: #fff;
+    background-color: #ef6c57;
+}
+.sec-1 .btn:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+/*Section 2*/
+.sec-2 .box{
+    transform: translate(0px,-50px);
+}
+.box a{
+    text-decoration: none;
+    width: 100%;
+    height: 440px;
+    text-align: center;
+    overflow: hidden;
+}
+.box a .img{
+    width: 100%;
+    height: 100%;
+}
+#sec-2-img-1{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/card_img_1.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-2-img-2{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/card_img_2.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-2-img-3{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/card_img_3.jpg) ,no-repeat;
+    background-size: cover;
+}
+
+.box a:hover .img{
+    transform: scale(1.1);
+}
+.box a h5{
+    transform: translate(0px, -40px);
+    color: white;
+    
+}
+.box a:hover h5{
+    transform: translate(0px, -50px);
+}
+.sec-row{
+    margin-top: 50px;
+}
+.icon{
+    width: 100px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+.sec-row a{
+    color: #e43216;
+    text-decoration: none;
+    position: relative;
+}
+.sec-row a::before{
+    content: '';
+    position: absolute;
+    background-color: #e43216;
+    width: 0%;
+	height: 0.5px;
+	left: 0;
+	bottom: 0;
+    transition: all 0.3s ease;
+}
+.sec-row .box:hover a::before{
+    width: 100%;
+}
+.box{
+    display: flex;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.box h4{
+    margin-bottom: 15px;
+}
+.box p{
+    text-align: justify;
+    padding-right: 15px;
+}
+
+/*Section 3*/
+.sec-3{
+    background: #ededed;
+    padding-bottom: 50px;
+}
+.sec-3 .box a h5::before{
+    content: '$399';
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    color: #e43216;
+}
+#sec-3-img-1{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/greece.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-3-img-2{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/rome.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-3-img-3{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/japan.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-3-img-4{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/dubai.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-3-img-5{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/london.jpg) ,no-repeat;
+    background-size: cover;
+}
+#sec-3-img-6{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url(img/australia.jpg) ,no-repeat;
+    background-size: cover;
+}
+
+
+/*Section 4*/
+.sec-4{
+    margin-top: 50px;
+}
+
+/*Section 5*/
+.sec-5{
+    margin: 70px 0px 100px 0px;
+}
+.sec-5 h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.sec-5 .btn{
+    padding: 12px 35px;
+    color: #fff;
+    background-color: #ef6c57;
+}
+.sec-5 .btn:hover{
+    background-color: transparent;
+    color: rgb(48, 48, 48);
+    border: 2px solid rgb(48, 48, 48);
+}
+/*Footer*/
+.footer{
+    background: #333333;
+}
+.footer h4{
+    color:#fff;
+    margin-bottom: 15px;
+}
+.footer p,.footer a{
+    font-size: 17px;
+}
+.footer p{
+    color: #737373;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin-bottom: 5px;
+}
+.footer ul a{
+    text-decoration: none;
+    color: #999999;
+}
+.footer ul a:hover{
+    color: white;
+}
+
+/*Media Queries*/
+@media screen and (width<768px) {
+    .box a{
+        height: 550px !important;
+    }
+}
